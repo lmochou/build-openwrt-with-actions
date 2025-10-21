@@ -129,7 +129,7 @@ jobs:
           # 解析 .config 的依赖并生成最终配置
           make defconfig
 
-      - name: Debug: #查找 default-settings 包与显示 Makefile 片段（便于定位架构限制）
+      - name: Debug: 查找 default-settings 包与显示 Makefile 片段（便于定位架构限制）
         working-directory: openWRT
         run: |
           echo "---- 查找 default-settings 的位置 ----"
